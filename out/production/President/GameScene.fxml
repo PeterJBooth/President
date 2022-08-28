@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.GameController">
+   <bottom>
+      <HBox prefHeight="83.0" prefWidth="1585.0" spacing="40.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="166.0">
+               <children>
+                  <Button fx:id="btnPlayCard" alignment="CENTER" blendMode="EXCLUSION" contentDisplay="TOP" minHeight="96.0" minWidth="63.0" mnemonicParsing="false" onAction="#clickPlayCard" prefHeight="160.0" prefWidth="108.0" text="Play Card" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets top="20.0" />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="knockButton" alignment="CENTER" blendMode="EXCLUSION" contentDisplay="TOP" layoutX="80.0" layoutY="15.0" minHeight="96.0" minWidth="63.0" mnemonicParsing="false" onAction="#knock" prefHeight="160.0" prefWidth="108.0" text="Knock" textAlignment="CENTER">
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets top="20.0" />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Text fx:id="statusText1" blendMode="MULTIPLY" fill="#801919" fontSmoothingType="LCD" stroke="#ffd9d9" strokeMiterLimit="0.0" strokeType="OUTSIDE" text="Default Class">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="30.0" top="50.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <padding>
+                  <Insets left="27.0" top="5.0" />
+               </padding>
+            </HBox>
+            <HBox fx:id="cardsBox" prefHeight="250.0" prefWidth="368.0">
+               <children>
+                  <Button fx:id="card1" mnemonicParsing="false" onAction="#clickCard" prefHeight="0.0" prefWidth="119.0">
+                     <graphic>
+                        <ImageView fitHeight="150.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/cards/2_of_hearts.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="card2" mnemonicParsing="false" onAction="#clickCard" prefHeight="0.0" prefWidth="119.0">
+                     <graphic>
+                        <ImageView fitHeight="150.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/cards/3_of_hearts.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="card3" mnemonicParsing="false" onAction="#clickCard" prefHeight="0.0" prefWidth="119.0">
+                     <graphic>
+                        <ImageView fitHeight="150.0" fitWidth="138.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/cards/4_of_hearts.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="card4" mnemonicParsing="false" onAction="#clickCard" prefHeight="0.0" prefWidth="119.0">
+                     <graphic>
+                        <ImageView fitHeight="150.0" fitWidth="140.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/cards/5_of_hearts.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="card5" mnemonicParsing="false" onAction="#clickCard" prefHeight="0.0" prefWidth="119.0">
+                     <graphic>
+                        <ImageView fitHeight="150.0" fitWidth="138.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/cards/6_of_hearts.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="card6" mnemonicParsing="false" onAction="#clickCard" prefHeight="0.0" prefWidth="119.0">
+                     <graphic>
+                        <ImageView fitHeight="150.0" fitWidth="138.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/cards/7_of_hearts.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="card7" mnemonicParsing="false" onAction="#clickCard" prefHeight="0.0" prefWidth="119.0">
+                     <graphic>
+                        <ImageView fitHeight="150.0" fitWidth="138.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/cards/8_of_hearts.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="card8" mnemonicParsing="false" onAction="#clickCard" prefHeight="0.0" prefWidth="119.0">
+                     <graphic>
+                        <ImageView fitHeight="150.0" fitWidth="138.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/cards/9_of_hearts.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="card9" mnemonicParsing="false" onAction="#clickCard" prefHeight="0.0" prefWidth="119.0">
+                     <graphic>
+                        <ImageView fx:id="image9" fitHeight="150.0" fitWidth="138.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/cards/10_of_hearts.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets top="120.0" />
+         </padding>
+      </HBox>
+   </bottom>
+   <left>
+      <VBox prefHeight="251.0" prefWidth="247.0" spacing="200.0" translateY="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="250.0">
+               <children>
+                  <TextFlow prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Player 2 " wrappingWidth="110.6708984375">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="statusText2" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="(Default Class)" wrappingWidth="52.6708984375">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </TextFlow>
+                  <TextFlow prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Cards Remaing: " wrappingWidth="110.6708984375">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="cardsNumberText2" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="9" wrappingWidth="52.6708984375">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </TextFlow>
+                  <ImageView fx:id="opponentCardsImage2" fitHeight="170.0" fitWidth="171.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/cards/backofcards.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="hasKnockedText2" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </VBox>
+         </children>
+         <BorderPane.margin>
+            <Insets left="10.0" />
+         </BorderPane.margin>
+      </VBox>
+   </left>
+   <right>
+      <VBox prefHeight="248.0" prefWidth="265.0" translateY="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="251.0" prefWidth="367.0">
+               <children>
+                  <TextFlow prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Player 6 " wrappingWidth="110.6708984375">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="statusText6" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="(Default Class)" wrappingWidth="319.419921875">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </TextFlow>
+                  <TextFlow prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Cards Remaing: " wrappingWidth="303.83203125">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="cardsNumberText6" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="9" wrappingWidth="52.6708984375">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </TextFlow>
+                  <ImageView fx:id="opponentCardsImage6" fitHeight="170.0" fitWidth="338.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/cards/backofcards.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets right="20.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Text fx:id="hasKnockedText6" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </VBox>
+         </children></VBox>
+   </right>
+   <top>
+      <HBox alignment="CENTER" prefHeight="131.0" prefWidth="1430.0" spacing="240.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="250.0">
+               <children>
+                  <TextFlow prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Player 3 " wrappingWidth="110.6708984375">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="statusText3" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="(Default Class)" wrappingWidth="459.419921875">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </TextFlow>
+                  <TextFlow prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Cards Remaing: " wrappingWidth="333.83203125">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="cardsNumberText3" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="9" wrappingWidth="52.6708984375">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </TextFlow>
+                  <ImageView fx:id="opponentCardsImage3" fitHeight="170.0" fitWidth="332.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/cards/backofcards.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="hasKnockedText3" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="250.0">
+               <children>
+                  <TextFlow prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Player 4 " wrappingWidth="110.6708984375">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="statusText4" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="(Default Class)" wrappingWidth="52.6708984375">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </TextFlow>
+                  <TextFlow prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Cards Remaing: " wrappingWidth="110.6708984375">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="cardsNumberText4" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="9" wrappingWidth="52.6708984375">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </TextFlow>
+                  <ImageView fx:id="opponentCardsImage4" fitHeight="170.0" fitWidth="171.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/cards/backofcards.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="hasKnockedText4" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </VBox>
+            <VBox layoutX="427.0" layoutY="10.0" prefHeight="200.0" prefWidth="250.0">
+               <children>
+                  <TextFlow prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Player 5 " wrappingWidth="110.6708984375">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="statusText5" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="(Default Class)" wrappingWidth="459.419921875">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </TextFlow>
+                  <TextFlow prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Cards Remaing: " wrappingWidth="333.83203125">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="cardsNumberText5" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="9" wrappingWidth="52.6708984375">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </TextFlow>
+                  <ImageView fx:id="opponentCardsImage5" fitHeight="170.0" fitWidth="332.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/cards/backofcards.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="hasKnockedText5" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Text fx:id="messageText" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Text>
+               </children></VBox>
+            <VBox alignment="CENTER" maxHeight="200.0" minHeight="200.0" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <ImageView fx:id="cardPlaced4" fitHeight="200.0" pickOnBounds="true" preserveRatio="true" rotate="-40.0" translateY="300.0">
+                     <image>
+                        <Image url="@assets/cards/white.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="cardPlaced3" fitHeight="200.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" rotate="-27.0" translateY="100.0">
+                     <image>
+                        <Image url="@assets/cards/white.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="cardPlaced2" fitHeight="200.0" layoutX="473.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true" rotate="-13.0" translateY="-100.0">
+                     <image>
+                        <Image url="@assets/cards/white.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="cardPlaced1" fitHeight="200.0" layoutX="473.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true" translateY="-300.0">
+                     <image>
+                        <Image url="@assets/cards/white.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

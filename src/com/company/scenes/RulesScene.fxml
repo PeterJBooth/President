@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Accordion maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <panes>
+    <TitledPane animated="false" prefHeight="247.0" prefWidth="900.0" text="Aim of the Game">
+      <content>
+        <AnchorPane maxWidth="898.0" minHeight="0.0" minWidth="0.0" prefHeight="274.0" prefWidth="898.0">
+               <children>
+                  <Text layoutX="14.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The aim of the game is to get rid of all your cards.">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="14.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To do this, in turn players place cards in the center. ">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="205.0" fitWidth="141.0" layoutX="397.0" layoutY="156.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/cards/3_of_hearts.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="205.0" fitWidth="141.0" layoutX="392.0" layoutY="156.0" pickOnBounds="true" preserveRatio="true" rotate="10.0">
+                     <image>
+                        <Image url="@../../../assets/cards/6_of_spades.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="205.0" fitWidth="141.0" layoutX="397.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true" rotate="-7.0">
+                     <image>
+                        <Image url="@../../../assets/cards/10_of_clubs.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+      </content>
+         <font>
+            <Font size="25.0" />
+         </font>
+    </TitledPane>
+    <TitledPane animated="false" text="Rules to Placing Cards">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Text layoutX="14.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="However, a player may only place a card with a rank equal or higher than that of the card previously placed" wrappingWidth="889.28515625">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="14.0" layoutY="341.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If you have multiple cards with the same rank (e.g. 3H, 3D, 3C) you can place them all at the same time." wrappingWidth="279.927734375">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="66.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/cards/7_of_hearts.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="66.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true" rotate="-10.0">
+                     <image>
+                        <Image url="@../../../assets/cards/3_of_spades.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="397.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/cards/7_of_hearts.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="397.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true" rotate="-10.0">
+                     <image>
+                        <Image url="@../../../assets/cards/7_of_clubs.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="720.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/cards/7_of_hearts.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="720.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true" rotate="-10.0">
+                     <image>
+                        <Image url="@../../../assets/cards/queen_of_diamonds.png" />
+                     </image>
+                  </ImageView>
+                  <Line endX="20.0" layoutX="157.0" layoutY="169.0" rotate="45.0" startX="-100.0" stroke="RED" strokeMiterLimit="5.0" strokeWidth="5.0" />
+                  <Line endX="20.0" layoutX="157.0" layoutY="170.0" rotate="-45.0" startX="-100.0" stroke="RED" strokeMiterLimit="5.0" strokeWidth="5.0" />
+                  <ImageView fitHeight="114.0" fitWidth="78.0" layoutX="410.0" layoutY="322.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/cards/3_of_hearts.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="114.0" fitWidth="78.0" layoutX="420.0" layoutY="322.0" pickOnBounds="true" preserveRatio="true" rotate="10.0">
+                     <image>
+                        <Image url="@../../../assets/cards/3_of_diamonds.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="114.0" fitWidth="78.0" layoutX="427.0" layoutY="332.0" pickOnBounds="true" preserveRatio="true" rotate="20.0">
+                     <image>
+                        <Image url="@../../../assets/cards/3_of_clubs.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+      </content>
+         <font>
+            <Font size="25.0" />
+         </font>
+    </TitledPane>
+    <TitledPane animated="false" text="Knocking and Rounds">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Text layoutX="14.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="When a player can't or does not want to play a card he can knock. He will then not be able to place a card until the end of the round." wrappingWidth="595.453125">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <VBox layoutX="648.0" layoutY="28.0" prefHeight="200.0" prefWidth="250.0">
+                     <children>
+                        <TextFlow prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Player 2 " wrappingWidth="110.6708984375">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="statusText2" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="(Default Class)" wrappingWidth="52.6708984375">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </TextFlow>
+                        <TextFlow prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Cards Remaing: " wrappingWidth="110.6708984375">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="cardsNumberText2" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="9" wrappingWidth="52.6708984375">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </TextFlow>
+                        <ImageView fx:id="opponentCardsImage2" fitHeight="170.0" fitWidth="171.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../assets/cards/backofcards.png" />
+                           </image>
+                        </ImageView>
+                        <Text fx:id="hasKnockedText2" strokeType="OUTSIDE" strokeWidth="0.0" text="Has Knocked">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <Text layoutX="14.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A round ends when a player places a card and everyone else knocks. That player gets to play first in the following round." wrappingWidth="582.857421875">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="14.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If a player starts a round with multiple cards with the same rank (e.g 5D, 5H), all other players must play the same number of cards (or more) for the duration of that round. They may also choose to knock." wrappingWidth="582.857421875">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+               </children></AnchorPane>
+      </content>
+         <font>
+            <Font size="25.0" />
+         </font>
+    </TitledPane>
+      <TitledPane animated="false" prefHeight="247.0" prefWidth="900.0" text="Player Status">
+         <content>
+            <AnchorPane maxWidth="898.0" minHeight="0.0" minWidth="0.0" prefHeight="274.0" prefWidth="898.0">
+               <children>
+                  <TextFlow layoutX="14.0" layoutY="14.0" prefHeight="44.0" prefWidth="497.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="The first to get rid of their cards gets ">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="President ">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="status">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </TextFlow>
+                  <TextFlow layoutX="14.0" layoutY="58.0" prefHeight="44.0" prefWidth="497.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="The second gets ">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vice President ">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="status">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </TextFlow>
+                  <TextFlow layoutX="14.0" layoutY="102.0" prefHeight="44.0" prefWidth="497.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="The third gets ">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Upper Class">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" status">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </TextFlow>
+                  <TextFlow layoutX="14.0" layoutY="192.0" prefHeight="44.0" prefWidth="497.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="The second gets ">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Peasant">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" status">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </TextFlow>
+                  <TextFlow layoutX="14.0" layoutY="146.0" prefHeight="44.0" prefWidth="497.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="The second gets ">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Lower Class">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" status">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </TextFlow>
+                  <TextFlow layoutX="14.0" layoutY="242.0" prefHeight="44.0" prefWidth="497.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="The second gets ">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vice Peasant">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" status">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </TextFlow>
+               </children>
+            </AnchorPane>
+         </content>
+         <font>
+            <Font size="25.0" />
+         </font>
+      </TitledPane>
+      <TitledPane animated="false" prefHeight="247.0" prefWidth="900.0" text="Swapping Cards">
+         <content>
+            <AnchorPane maxWidth="898.0" minHeight="0.0" minWidth="0.0" prefHeight="274.0" prefWidth="898.0">
+               <children>
+                  <Text layoutX="14.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Once all players have got rid of their cards the game ends.">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="14.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="When a new game starts:" wrappingWidth="453.96484375">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="14.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Vice president then swaps his lowest ranking card for the peasants highest ranking cards" wrappingWidth="575.923828125">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="14.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The president swaps his 2 lowest ranking cards for the Vice peasants  2 highest ranking cards" wrappingWidth="575.923828125">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="188.0" fitWidth="98.0" layoutX="260.0" layoutY="285.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/cards/2_of_diamonds.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="186.0" fitWidth="98.0" layoutX="274.0" layoutY="285.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/cards/3_of_clubs.png" />
+                     </image>
+                  </ImageView>
+                  <Line endX="8.0" layoutX="465.0" layoutY="333.0" startX="-50.0" />
+                  <Polygon layoutX="484.0" layoutY="344.0" rotate="90.0" scaleX="0.2" scaleY="0.2" stroke="BLACK" strokeType="INSIDE">
+                    <points>
+                      <Double fx:value="-50.0" />
+                      <Double fx:value="40.0" />
+                      <Double fx:value="50.0" />
+                      <Double fx:value="40.0" />
+                      <Double fx:value="0.0" />
+                      <Double fx:value="-60.0" />
+                    </points>
+                  </Polygon>
+                  <Polygon layoutX="415.0" layoutY="344.0" rotate="-90.0" scaleX="0.2" scaleY="0.2" stroke="BLACK" strokeType="INSIDE">
+                     <points>
+                        <Double fx:value="-50.0" />
+                        <Double fx:value="40.0" />
+                        <Double fx:value="50.0" />
+                        <Double fx:value="40.0" />
+                        <Double fx:value="0.0" />
+                        <Double fx:value="-60.0" />
+                     </points>
+                  </Polygon>
+                  <ImageView fitHeight="146.0" fitWidth="97.0" layoutX="530.0" layoutY="286.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/cards/queen_of_clubs2.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="147.0" fitWidth="98.0" layoutX="541.0" layoutY="285.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/cards/red_joker.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </content>
+         <font>
+            <Font size="25.0" />
+         </font>
+      </TitledPane>
+  </panes>
+</Accordion>

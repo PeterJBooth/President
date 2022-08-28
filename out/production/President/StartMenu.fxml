@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox alignment="TOP_CENTER" maxHeight="1080.0" maxWidth="1920.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="825.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.StartMenuController">
+   <children>
+      <Text fill="#661313" stroke="BLACK" strokeLineCap="BUTT" strokeLineJoin="BEVEL" strokeType="INSIDE" strokeWidth="0.0" text="PRESIDENT" textAlignment="CENTER">
+         <effect>
+            <Glow />
+         </effect>
+         <font>
+            <Font size="140.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="50.0" />
+         </VBox.margin>
+      </Text>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="80.0">
+         <children>
+            <Button fx:id="startBtn" mnemonicParsing="false" onAction="#clickStart" prefWidth="502.0" text="Start Game" textFill="#570e0e">
+               <font>
+                  <Font size="60.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button fx:id="rulesBtn" mnemonicParsing="false" onAction="#clickRules" prefWidth="502.0" text="Rules" textFill="#570e0e">
+               <font>
+                  <Font size="60.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets top="150.0" />
+         </VBox.margin>
+      </VBox>
+      <Text fill="#570e0e" strokeType="OUTSIDE" strokeWidth="0.0" text="copyright © 2022 Peter Booth. all rights reserved." textAlignment="JUSTIFY" translateX="580.0" translateY="90.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+   </children>
+</VBox>
